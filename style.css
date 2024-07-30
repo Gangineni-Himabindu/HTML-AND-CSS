@@ -1,0 +1,27 @@
+h1{
+	color:red;
+	background-color:yellow;
+	font-family:cursive;
+	text-align:center;
+}
+p{
+   	color:blue;
+	background-color:pink;
+	font-family:sans-serif;
+}
+h2{
+	color:black;
+	background-color:yellow;
+	font-family:cursive;
+}
+h3{
+	color:green;
+	background-color:yellow;
+	font-family:cursive;
+}
+
+h4{
+	color:blue;
+	background-color:yellow;
+	font-family:cursive;
+}

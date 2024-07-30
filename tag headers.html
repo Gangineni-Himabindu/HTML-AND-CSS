@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Andhrapradesh {background-color:blue;}
+#Telangana {background-color:green;}
+#Tamilnadu {background-color:pink;}
+#Karnataka {background-color:black;}
+</style>
+</head>
+<body>
+
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div id="Andhrapradesh" class="tabcontent">
+  <h1>Andhrapradesh</h1>
+  <p>In seven wonders tirumala is one of it.</p>
+</div>
+
+<div id="Telangana" class="tabcontent">
+  <h1>Telangana</h1>
+  <p>Telangana is a state famous for its bronze castings,minarets and handicrafts.</p> 
+</div>
+
+<div id="Tamilnadu" class="tabcontent">
+  <h1>Tamilnadu</h1>
+  <p>Tamilnadu is famous for its temples,festivals,and celebration of the arts.</p>
+</div>
+
+<div id="Karnataka" class="tabcontent">
+  <h1>Karnataka</h1>
+  <p>Banglore is the electronic city in India.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Andhrapradesh', this, 'blue')" id="defaultOpen">Andhrapradesh</button>
+<button class="tablink" onclick="openCity('Telangana', this, 'green')">Telangana</button>
+<button class="tablink" onclick="openCity('Tamilnadu', this, 'pink')">Tamilnadu</button>
+<button class="tablink" onclick="openCity('Karnataka', this, 'black')">Karnataka</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
