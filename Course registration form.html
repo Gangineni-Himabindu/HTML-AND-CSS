@@ -1,0 +1,49 @@
+<html>
+<body>
+<h1>Course Registration Form</h1>
+<form>
+<fieldset>
+<legend>Personal Details</legend>
+<table>
+<tr><td><label>First Name</label></td><td><input type="text" name="FN" placeholder="Ex-Ramu" size="15"></td></tr>
+<tr><td><label>Surname</label></td><td><input type="text" name="SN" placeholder="Ex-ravinder" size="15"></td></tr>
+<tr><td><label>Mobile Number</label></td><td><input type="number" name="mobile" placeholder="984-324-642" size="15"></td></tr>
+<tr><td><label>Email</label></td><td><input type="text" name="mail" placeholder="Ex-ramu01@gmail.com" size="15"></td></tr>
+<tr><td><label>Password</label></td><td><input type="password" name="password" placeholder="min 5 characters" size="15"></td></tr>
+<tr><td><label>Confirm Password</label></td><td><input type="password" name="confirm password" placeholder="min 5 characters" size="15"></td></tr>
+<tr><td><label>DOB</label></td><td><input type="date" name="date of birth" size="15"></td></tr>
+<tr><td><label>Gender</label></td><td><input type="radio" name="Male" value="M">Male<input type="radio" name="Female" value="F">Female<input type="radio" name="Custom" value="C">Custom</td></tr>
+<tr><td><label>Select Country</label></td>
+<td><Select>
+<option value="INDIA">INDIA</option value>
+<option value="USA">USA</option value>
+<option value="CHINA">CHINA</option value>
+</Select></td>
+</tr>
+<tr><td><label>Upload Picture</label></td><td><input type="file" name="picture"></td></tr>
+</table>
+<input type="reset"><br>
+
+</fieldset>
+<fieldset>
+<legend>Course Details</legend>
+<label>Select Course</label>
+<select>
+	<option value="JAVA">JAVA</option>
+	<option value="PYTHON">PYTHON</option>
+	<option value="C">C</option>
+	<option value="C++">C++</option>
+
+</select><br>
+<label>Delivery Mode</label>
+<input type="checkbox" name="mode1" value="ON">ONLINE
+<input type="checkbox" name="mode2" value="OFF">OFFLINE<br>
+
+<label>Comments</label><br>
+<textarea rows="4" columns="40"></textarea>
+</fieldset>
+
+</form>
+<img src="submit.jpeg" width="75" height="60" type="input"></img>
+</body>
+</html>

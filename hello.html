@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+
+<canvas id="myCanvas" width="1450" height="130" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "bold 20px Calibri";
+ctx.fillText("PASSPORT APPLICATION FORM ",580,30);
+ctx.fillText("Government of India, Ministry of External Affairs ",500,50);
+var d = document.getElementById("myCanvas");
+var ctx = d.getContext("2d");
+ctx.font = "15px Calibri";
+ctx.fillText("Please read the Passport Instruction Booklet carefully before filling the form. Furnishing of incorrect information/suppression of information would lead to rejection of application  and would attract penal  ",150,80);
+ctx.fillText("provisions as prescribed under the Passports Act, 1967.Please produce your original documents at the time of submission of the form.All fields marked with (*) are mandatory to fill.",150,100);
+</script>
+<img src="nati.png" alt="national" width="100" height="50">
+<p><b>Service Required:</b></p>
+<label for="Applying for*"><b>Applying for*</b></label>
+  <select name="Applying for*" id="Applying for*">
+    <option value="Fresh Passport">Fresh Passport</option>
+    <option value="Reissue Passport">Reissue Passport</option>
+    
+  </select><br>
+<label for="Type of Application*"><b>Type of Application*</b></label>
+<input type="radio" id="Normal"  value="Normal">
+<label for="Normal">Normal</label>
+<input type="radio" id="Tatkaal"  value="Tatkaal">
+<label for="Tatkaal">Tatkaal</label><br>
+<label for="Type of Passport Booklet*"><b>Type of Passport Booklet*</b></label>
+<input type="radio" id="36 Pages"  value="36 Pages">
+<label for="36 Pages">36 Pages</label>
+<input type="radio" id="60 Pages"  value="60 Pages">
+<label for="60 Pages">60 Pages</label><br><br><hr>
+
+<p><b>Applicant Details:</b></p><br>
+<label for="fname"><b>Applicant's Given Name (Given Name means First Name followed by middle Name (if any)) *</b><br>
+  <input type="text" id="fname" size="100" ><br>
+  <label for="lname"><b>Surname</b></label><br>
+  <input type="text" id="lname" name="lname" size="100"><br>
+  <label for="Gender*"><b>Gender*</b></label>
+  <select name="Gender*" id="Gender*">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Transgender">Transgender</option>
+    
+  </select><br>
+  <label for="Are you known by any other names(aliases)? *"><b>Are you known by any other names(aliases)? *</b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+<label for="Have you ever changed your name ? *"><b>Have you ever changed your name ? *</b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+<label for="Date of Birth (DD/MM/YYYY) *"><b>Date of Birth (DD/MM/YYYY) *</b></label>
+  <input type="date" id="Date of Birth (DD/MM/YYYY) *" name="Date of Birth (DD/MM/YYYY) *"><br><br><hr>
+
+<label for="Place Of Birth"><b>Place Of Birth:</b></label><br><br>
+<label for="Is your Place of Birth out of India? *"><b>Is your Place of Birth out of India? *</b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+<label for="fname"><b>Village or Town or City *</b>
+  <input type="text" id="fname" size="100" ><br>
+  <label for="Marital Status *"><b>Marital Status *</b></label>
+  <select name="Marital Status *" id="Marital Status *">
+    <option value="Married">Married</option>
+    <option value="Single">Single</option>
+    <option value="Divorced">Divorced</option>
+    <option value="Widow/Widower">Widow/Widower</option>
+    <option value="Separated">Separated</option>
+  </select>
+  <label for="Citizenship of India by *"><b>Citizenship of India by *</b></label>
+  <select name="Citizenship of India by *" id="Citizenship of India by *">
+    <option value="Birth">Birth</option>
+    <option value="Decent">Decent</option>
+    <option value="Registration/Naturalization">Registration/Naturalization</option>
+  </select><br><br>
+  <label for="PAN (If available)"><b>PAN (If available)</b></label>
+  <input type="text" id="PAN (If available)" size="30" >
+  <label for="Voter ID (If available)"><b>Voter ID (If available)</b></label>
+  <input type="text" id="Voter ID (If available)" size="30" ><br>
+  <label for="Employment Type *"><b>Employment Type *</b></label>
+  <select name="Employment Type *" id="Employment Type *">
+    <option value="Government">Government</option>
+    <option value="Homemaker">Homemaker</option>
+    <option value="Not employed">Not employed</option>
+    <option value="Owners, Partners & Directors of companies which are members of CII, FICCI & ASSOCHAM">Owners, Partners & Directors of companies which are members of CII, FICCI & ASSOCHAM</option>
+    <option value="Private">Private</option>
+    <option value="PSU">PSU</option>
+    <option value="Retired Government Servant">Retired Government Servant</option>
+    <option value="Retired- Private Service">Retired- Private Service</option>
+    <option value="Self employed">Self employed</option>
+    <option value="Statutory body">Statutory body</option>
+    <option value="Student">Student</option>
+  </select><br>
+  <label for="Is either of your parent (in case of minor)/ spouse, a government servant? *"><b>Is either of your parent (in case of minor)/ spouse, a government servant? *</b></label>
+  <select name="Is either of your parent (in case of minor)/ spouse, a government servant? *" id="Is either of your parent (in case of minor)/ spouse, a government servant? *">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select><br>
+  <label for="Educational Qualification *"><b>Educational Qualification *</b></label>
+  <select name="Educational Qualification *" id="Educational Qualification *">
+    <option value="7th pass or less ">7th pass or less </option>
+    <option value="Between 8th and 9th standard">Between 8th and 9th standard</option>
+    <option value="10th pass and above">10th pass and above </option>
+    <option value="Graduate and above">Graduate and above</option>
+  </select>
+  <label for="Are you eligible for Non-ECR category? *"><b>Are you eligible for Non-ECR category? *</b></label>
+  <select name="Are you eligible for Non-ECR category? *" id="Are you eligible for Non-ECR category? *">
+    <option value="Yes">Yes </option>
+    <option value="No">No</option>
+  </select><br>
+  <label for="Visible Distinguishing Mark"><b>Visible Distinguishing Mark</b>
+    <input type="text" id="Visible Distinguishing Mark" size="100" ><br>
+    <label for="Aadhaar Number"><b>Aadhaar Number</b>
+      <input type="text" id="Aadhaar Number" size="50" ><br>
+   <p>I, the holder of above mentioned Aadhaar Number , hereby give my consent to Passport Seva to obtain my Aadhaar Number, Name and 
+    Fingerprint/Iris for authentication with UIDAI. I have no objection using my identity and biometric information for validation with Aadhaar 
+    (CIDR) database only for the purpose of authentication.</p>
+    <label for="I agree">I agree</label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br><hr>
+<p><b>Family Details (Father/Mother/Legal Guardian details; at least one is mandatory.) *</b></p>
+<label for="Father's Given Name (Given Name means First Name followed by Middle Name (If any))"><b>Father's Given Name (Given Name means First Name followed by Middle Name (If any))</b><br>
+  <input type="text" id="Father's Given Name (Given Name means First Name followed by Middle Name (If any))" size="100" ><br>
+  <label for="Surname"><b>Surname</b><br>
+    <input type="text" id="Surname" size="100" ><br>
+    <label for="Legal Guardian's Given Name (if applicable) 
+    "><b>Legal Guardian's Given Name (if applicable) 
+    </b><br>
+      <input type="text" id="Legal Guardian's Given Name (if applicable) " size="100" ><br>
+      <label for="Mother's Given Name (Given Name means First Name followed by Middle Name (If any))"><b>Mother's Given Name (Given Name means First Name followed by Middle Name (If any))</b><br>
+        <input type="text" id="Mother's Given Name (Given Name means First Name followed by Middle Name (If any))" size="100" ><br>
+        <label for="Surname"><b>Surname</b><br>
+          <input type="text" id="Surname" size="100" ><br><hr>
+          <label for="Present Residential Address Details (where applicant presently resides): "><b>Present Residential Address Details (where applicant presently resides): </b></label><br><br>
+<label for="Is your present address out of India?* "><b>Is your present address out of India?*</b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+<label for="Do you have a Permanent Address? * "><b>Do you have a Permanent Address? * </b></label><br><br>
+<label for="Do you have a Permanent Address? * "><b>Do you have a Permanent Address? * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br><hr>
+
+<p><b>Emergency Contact Details:</b></p>
+<label for="Name and Address *">Name and Address *</label><br>
+  <input type="text" id="Name and Address *" size="200" ><br>
+  <label for="Mobile Number*">Mobile Number*</label>
+    <input type="text" id="Mobile Number*" size="50" >
+    <label for="Telephone Number">Telephone Number</label>
+      <input type="text" id="Telephone Number" size="50" ><br>
+      <label for="E-mail ID">E-mail ID</label>
+        <input type="text" id="E-mail ID" size="50" ><br><hr>
+    
+        <p><b>References in your Village or Town or City</b></p>
+        <label for="First Reference Name and Address *">First Reference Name and Address *</label><br>
+          <input type="text" id="First Reference Name and Address *" size="200" ><br>
+          <label for="Mobile Number">Mobile Number*</label>
+            <input type="text" id="Mobile Number" size="50" >
+            <label for="Telephone Number">Telephone Number</label>
+              <input type="text" id="Telephone Number" size="50" ><br>
+              <label for="Second Reference Name and Address *">Second Reference Name and Address *</label><br>
+                <input type="text" id="Second Reference Name and Address *" size="200" ><br>
+                <label for="Mobile Number">Mobile Number*</label>
+                <input type="text" id="Mobile Number" size="50" >
+                <label for="Telephone Number">Telephone Number</label>
+                  <input type="text" id="Telephone Number" size="50" ><br><hr>
+
+        <p><b>Identity Certificate /Passport Details:</b></p>
+<label for="Have you ever held/hold any Identity Certificate? *"><b>Have you ever held/hold any Identity Certificate? * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+<p><b>(Identity Certificate(IC) is normally issued to Tibetan/other stateless people residing in India)</b></p><br>
+<label for="Details of Previous/Current Diplomatic/Official Passport* "><b>Details of Previous/Current Diplomatic/Official Passport*  </b></label><br>
+<input type="radio" id="Details Available"  value="Details Available">
+<label for="Details Available">Details Available</label>
+<input type="radio" id="Details Not Available/Never Held Diplomatic/Official Passport"  value="Details Not Available/Never Held Diplomatic/Official Passport">
+<label for="Details Not Available/Never Held Diplomatic/Official Passport">Details Not Available/Never Held Diplomatic/Official Passport</label><br>
+<label for="Have you ever applied for passport, but not issued? *"><b>Have you ever applied for passport, but not issued? *</b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br><hr>
+
+
+<p><b>Other Details:</b></p><br>
+<label for="1) Have you ever been charged with criminal proceedings or any arrest warrant/ summon pending 
+before a court of India? "><b>1) Have you ever been charged with criminal proceedings or any arrest warrant/ summon pending 
+  before a court of India?  </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+
+<label for="2) Have you at any time during the period of 5 years immediately preceding the date of this application 
+been convicted by a court in India for any criminal offence and sentenced to imprisonment for two 
+years or more? * "><b>2) Have you at any time during the period of 5 years immediately preceding the date of this application 
+  been convicted by a court in India for any criminal offence and sentenced to imprisonment for two 
+  years or more? * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+
+<label for="3) Have you ever been refused or denied passport? *"><b>3) Have you ever been refused or denied passport? * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+
+<label for="4) Has your Passport ever been impounded or Revoked? *"><b>4) Has your Passport ever been impounded or Revoked?  * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+
+<label for="5) Have you ever applied for/ been granted political asylum to/ by any foreign country? *"><b>5) Have you ever applied for/ been granted political asylum to/ by any foreign country? * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+
+<label for="6) Have you ever returned to India on Emergency Certificate (EC) or were ever deported or repatriated? *"><b>6) Have you ever returned to India on Emergency Certificate (EC) or were ever deported or repatriated? * </b></label>
+<input type="radio" id="Yes"  value="Yes">
+<label for="Yes">Yes</label>
+<input type="radio" id="No"  value="No">
+<label for="No">No</label><br>
+
+<p><b>Self Declaration</b></p>
+<p> I owe allegiance to the sovereignty , unity & integrity of India, and have not voluntarily acquired citizenship or travel document of any 
+  other country. I have not lost, surrendered or been deprived of the the citizenship of India and I affirm that the information given by me in 
+  this form and the enclosures is true and I solely responsible for its accuracy, and I am liable to be penalized or prosecuted if found 
+  otherwise. I am aware that under the Passport Act, 1967 it is a criminal offence to furnish any false information or to suppress any material 
+  information with a view to obtaining passport or travel document.</p>
+  <input type="radio" id="I Agree"  value="I Agree">
+  <label for="I Agree">I Agree</label><br>
+
+  <label for="Place*">Place*</label>
+  <input type="text" id="Place*" size="50" >
+
+  <label for="Date of Birth (DD/MM/YYYY) *"><b>Date of Birth (DD/MM/YYYY) *</b></label>
+  <input type="date" id="Date of Birth (DD/MM/YYYY) *" name="Date of Birth (DD/MM/YYYY) *"><br><br>
+
+  <p><b>Note:</b></p>
+  <p>Applicants are required to submit the proof of address of the present address only, irrespective of the date from which he/she has been 
+    residing at the given address. However, he/she is required to mention all the places of stay during previous one year (from the date of 
+    application filling) in the Passport application form.</p>
+  
+    <button type="button" onclick="alert('Succesful')">Validate & Save</button>
+              
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
